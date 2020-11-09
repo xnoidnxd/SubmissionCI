@@ -1,0 +1,11 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="description">Description</string>
+    <string name="movie">Movie</string>
+    <string name="tv_show">TvShow</string>
+    <string name="minutes">minutes</string>
+    <string name="popularity">Popularity</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="no_favorite_added_yet">No favorite added yet!</string>
+    <string name="favorite_no_data">Favorite no data</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_airing"
+        android:icon="@drawable/ic_airing_24"
+        android:title="@string/bottom_airing" />
+    <item
+        android:id="@+id/bottom_popular"
+        android:icon="@drawable/ic_popular_24"
+        android:title="@string/bottom_popular" />
+
+    <item
+        android:id="@+id/bottom_search"
+        android:icon="@drawable/ic_search_24"
+        android:title="@string/bottom_search"/>
+</menu>

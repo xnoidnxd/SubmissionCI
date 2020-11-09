@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/bottom_airing">
+
+    <fragment
+        android:id="@+id/bottom_airing"
+        android:name="com.inoid.submission.ui.body.airing.BaseAiringFragment"
+        android:label="fragment_base_airing"
+        tools:layout="@layout/fragment_base_airing" >
+        <action
+            android:id="@+id/action_bottom_airing_to_favorite_navigation"
+            app:destination="@id/favorite_navigation" />
+        <action
+            android:id="@+id/action_bottom_airing_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_bottom_airing_to_detailTvShowFragment"
+            app:destination="@id/detailTvShowFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bottom_popular"
+        android:name="com.inoid.submission.ui.body.popular.BasePopularFragment"
+        android:label="fragment_base_popular"
+        tools:layout="@layout/fragment_base_popular" >
+        <action
+            android:id="@+id/action_bottom_popular_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_bottom_popular_to_detailTvShowFragment"
+            app:destination="@id/detailTvShowFragment" />
+        <action
+            android:id="@+id/action_bottom_popular_to_favorite_navigation"
+            app:destination="@id/favorite_navigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bottom_search"
+        android:name="com.inoid.submission.ui.body.search.BaseSearchFragment"
+        android:label="fragment_base_search"
+        tools:layout="@layout/fragment_base_search" >
+        <action
+            android:id="@+id/action_bottom_search_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_bottom_search_to_detailTvShowFragment"
+            app:destination="@id/detailTvShowFragment" />
+        <action
+            android:id="@+id/action_bottom_search_to_favorite_navigation"
+            app:destination="@id/favorite_navigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/baseFavoriteFragment"
+        android:name="com.inoid.submission.favorite.body.BaseFavoriteFragment"
+        app:moduleName="favorite"
+        android:label="BaseFavoriteFragment" >
+        <action
+            android:id="@+id/action_baseFavoriteFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_baseFavoriteFragment_to_detailTvShowFragment"
+            app:destination="@id/detailTvShowFragment" />
+    </fragment>
+
+    <include-dynamic
+        android:id="@+id/favorite_navigation"
+        app:moduleName="favorite"
+        app:graphResName="favorite_navigation"
+        app:graphPackage="com.inoid.submission.favorite">
+    </include-dynamic>
+
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.inoid.submission.ui.detail.movie.DetailMovieFragment"
+        android:label="fragment_detail_movie"
+        tools:layout="@layout/fragment_detail_movie" >
+        <argument
+            android:name="movieId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_baseFavoriteFragment"
+            app:destination="@id/baseFavoriteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailTvShowFragment"
+        android:name="com.inoid.submission.ui.detail.tvshow.DetailTvShowFragment"
+        android:label="fragment_detail_tv_show"
+        tools:layout="@layout/fragment_detail_tv_show" >
+        <argument
+            android:name="tvShowId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_detailTvShowFragment_to_baseFavoriteFragment"
+            app:destination="@id/baseFavoriteFragment" />
+    </fragment>
+
+</navigation>

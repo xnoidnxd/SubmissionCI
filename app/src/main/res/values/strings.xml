@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Submission</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="bottom_airing">Airing</string>
+    <string name="bottom_popular">Popular</string>
+    <string name="bottom_search">Search</string>
+
+    <string name="search">Search</string>
+
+    <string name="description">Description</string>
+    <string name="movie">Movie</string>
+    <string name="tv_show">TvShow</string>
+    <string name="minutes">minutes</string>
+    <string name="popularity">Popularity</string>
+    <string name="title_favorite">Favorite</string>
+
+    <string name="sys_read_more">Read More</string>
+    <string name="sys_read_less">Less</string>
+    <string name="oops_not_found">Oops! Not Found!</string>
+
+    <string name="snack_message_fav_added">Added to Favorite!</string>
+    <string name="snack_message_fav_delete">Deleted From Favorite</string>
+    <string name="snack_go_to_favorite">Favorite</string>
+
+    <string name="alert_message_close_app">Are you sure want to exit?</string>
+    <string name="alert_option_yes">Yes</string>
+    <string name="alert_option_no">No</string>
+
+    <string name="toast_error_message">Something Error!</string>
+</resources>
